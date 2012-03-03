@@ -16,7 +16,7 @@
 		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
-</script>
+</script>	
 </head>
 
 <body>
@@ -40,19 +40,27 @@
 		<a href="forum.html">讨论区</a>
 		<a href="issues.html">项目管理</a>
 		<a href="jenkins.html">Jenkins</a>
-		<a target="_blank" href="http://www.weibo.com/calvin1978">关于作者</a>
+        <a target="_blank" href="http://www.weibo.com/calvin1978">关于作者</a>
      </div>
 </div>
 
 <div id="mainbar" class="noright">
-<h1>Jenkins持续集成</h1>
-	<div class="introduction">EC2上的Jenkins：<a target="_blank" href="http://ec2-107-22-29-7.compute-1.amazonaws.com/hudson">http://ec2-107-22-29-7.compute-1.amazonaws.com/hudson</a></div>
-	<div class="introduction">感谢<a href="http://jenkinshosting.com/">JenkinsHosting.com</a>在亚马逊云上提供的Jenkins服务，对开源项目是免费的。</div>
-	<div class="introduction">目前上面只有一个Job，执行所有子项目的单元测试。以后还会加一个每天三更半夜里执行的，有CheckStyle，PMD，FindBugs检查和测试覆盖率报表的Job。欢迎大家监督围观。</div>
-	<div class="introduction">BTW. 同一个EC2实例上，还有另一个不知名的开源项目，全世界无产者挤在屋檐下吃免费午餐的感觉。</div>
-	<div style="height:50px"> </div>
+<h1>参与开发</h1>
+<div class="introduction">得益于GitHub社交网络化的项目参与方式，大家可以随时开始这样的流程：
+<ul>
+<li>首先可以在<a target="_blank" href="http://github.com/springside/springside4/issues">Github Feature/Issues</a>里找到本迭代里感兴趣的Item</li>
+<li>然后点击"Fork"，得到自己的Repository，开始工作。</li>
+<li>完成更新之后，再点击"Pull Request"。</li>
+<li>最后我Review大家的更新之后，会手工或自动的将改动合并回Master。</li>
+</ul>
 </div>
-
+<h1>其他贡献方式</h1>
+<ul>
+	<li>在<a target="_blank" href="http://www.oschina.net/p/springside">讨论区</a>参与讨论和解答其他童鞋的问题。</li>
+	<li>在<a target="_blank" href="http://github.com/springside/springside4/issues">Github Issuse</a>里报告发现的问题和改进建议。</li>
+	<li>友情传播，转发。</li>
+</ul>
+</div>
 <div id="footer">
     <center>Copyright&copy;2005-2012 springside.org.cn Hosted on <a href="http://www.github.com" target="_blank">github.com</a></center>
 </div>

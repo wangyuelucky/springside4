@@ -40,7 +40,7 @@
 		<a href="forum.html">讨论区</a>
 		<a href="issues.html">项目管理</a>
 		<a href="jenkins.html">Jenkins</a>
-		<a target="_blank" href="http://www.weibo.com/calvin1978">关于作者</a>
+		<a target="_blank" href="http://www.weibo.com/calvin1978">江南白衣微博</a>
      </div>
 </div>
 
@@ -48,10 +48,11 @@
 <h1>Jenkins持续集成</h1>
 	<div class="introduction">EC2上的Jenkins：<a target="_blank" href="http://ec2-107-22-29-7.compute-1.amazonaws.com/hudson">http://ec2-107-22-29-7.compute-1.amazonaws.com/hudson</a></div>
 	<div class="introduction">感谢<a href="http://jenkinshosting.com/">JenkinsHosting.com</a>在亚马逊云上提供的Jenkins服务，对开源项目是免费的。</div>
-	<div class="introduction">目前上面运行两个Job：</div>
+	<div class="introduction">目前上面运行三个Job：</div>
 	<ul type="square">
-	<li>一个是每小时触发一次的单元测试。</li>
-	<li>一个是在单元测试成功运行后触发的冒烟测试，运行最重要的一批集成测试用例。</li>
+		<li>一个是每小时触发一次的单元测试。</li>
+		<li>一个是在单元测试成功运行后触发的冒烟测试，运行最重要的一批功能测试用例。</li>
+		<li>一个是在凌晨执行的所有功能用例。</li>
     </ul>
 	<div class="introduction">BTW. 同一个EC2实例上，还有另一个不知名的开源项目，全世界无产者挤在屋檐下吃免费午餐的感觉。</div>
 	<div style="height:50px"> </div>

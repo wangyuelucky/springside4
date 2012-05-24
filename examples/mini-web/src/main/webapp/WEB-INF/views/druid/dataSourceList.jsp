@@ -20,7 +20,7 @@
 	</c:if>
 	
 	<table id="contentTable" class="table table-striped table-bordered table-condensed">
-		<thead><tr><th>URL</th><th>DbType</th><th>正在打开连接数</th><th>逻辑打开</th><th>逻辑关闭<th>物理打开</th><th>物理关闭</th></tr></thead>
+		<thead><tr><th>URL</th><th>DbType</th><th>正在打开连接数</th><th>逻辑打开</th><th>逻辑关闭<th>物理打开</th><th>物理关闭</th><th>非空等待</th></tr></thead>
 		<tbody>
 		<c:forEach items="${dataSources}" var="dataSource">
 			<tr>
@@ -31,6 +31,7 @@
 				<td>${dataSource.closeCount}</td>
 				<td>${dataSource.createCount}</td>
 				<td>${dataSource.destroyCount}</td>
+				<td>${dataSource.notEmptyWaitCount}</td>
 			</tr>
 		</c:forEach>
 		</tbody>
@@ -47,7 +48,7 @@
 			<th>SQL</th>
 			<th>ExecuteCount</th>
 			<th>FetchRowCount</th>
-			<th>ExecuteMillisTotal</th>
+			<th>ExecuteTimeTotal</th>
 			<th>ResultSetHoldTime</th>
 		</tr></thead>
 		<tbody>

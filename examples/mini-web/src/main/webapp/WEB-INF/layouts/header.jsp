@@ -19,6 +19,9 @@
 			<shiro:hasPermission name="group:view">
 				<li id="group-tab"><a href="${ctx}/account/group/">权限组列表</a></li>
 			</shiro:hasPermission>
+			
+			<li id="druid-tab"><a href="${ctx}/druid/dataSource/">数据源监控</a></li>
+			
 			<li><a href="${ctx}/logout">退出登录</a></li>
 			</shiro:user>
 			<shiro:guest>
